@@ -1,0 +1,84 @@
+*{
+
+    box-sizing:border-box;
+}
+
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 195px;
+
+
+}
+
+.parent{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin:200px auto;
+}
+
+.parent .child{
+    width: 288px;
+    padding: 40px 40px;
+
+}
+
+.child1{
+background-color: hsl(31, 77%, 52%);
+}
+
+.child2{
+background-color: hsl(184, 100%, 22%);
+}
+
+.child3{
+ background-color:hsl(179, 100%, 13%);
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    margin: 30px 0;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+}
+
+.btn1 button{
+    color:hsl(179, 100%, 13%) ;
+}
+
+.btn2 button{
+    color:hsl(184, 100%, 22%) ;
+}
+
+.btn3 button{
+    color:hsl(31, 77%, 52%);
+
+}
+
+button:hover{
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+
+
+@media only screen and  (max-width: 786px) {
+
+    .parent{
+        
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
